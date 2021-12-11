@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Fuzzy+Bubbles:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:ital,wght@0,500;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Fuzzy Bubbles', curs;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/b1.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh; 
+    padding-top: 80px; 
+    background-color: black;
+}
+#borad{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    top :50%;
+    left:50%;
+    transform: translateY(35%);
+} 
+.img{
+    width: 100px;
+    height: 50px;
+    z-index: 100;
+}
+.cell{
+    border: 1px solid #919191;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   font-size: 80px;
+   width: 100px;
+   height: 100px;
+}
+#reStart{
+    position: absolute;
+    top: 80%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    color: black;
+    padding: 8px 25px;
+    background: linear-gradient(to right, rgb(0, 197, 247, 0.9), rgba(197, 203, 50 ,0.6));
+    border-radius: 7px;
+    border: 1px solid #919191;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Fuzzy Bubbles', curs;
+}
+#parTurn{
+    text-align: center;
+    padding-top: 22px;
+    margin-bottom: -20px;  
+    font-size: 20px;
+}
+#parWinner{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -40px;  
+    font-size: 28px;
+}
+#winner{
+    font-size: 40px;
+    color: rgb(60, 195, 236);
+}
